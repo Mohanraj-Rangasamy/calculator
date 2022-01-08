@@ -1,0 +1,53 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    width: 250px;
+    text-align: center;
+    border: 8px solid rgb(92, 72, 46);
+    background-color: rgb(26, 8, 8);
+    border-radius: 8px;
+}
+
+.keypad{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-auto-rows: minmax(60px, auto);
+}
+input[type="text"]{
+    height:75px;
+    width: 240px;
+    background-color: rgb(75, 65, 73);
+    color:rgb(212, 183, 21);
+    text-align: right;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+
+}
+
+#clear{
+    background-color: rgb(89, 49, 141);
+    grid-column: 1/3;
+    grid-row: 1;
+    color:rgb(181, 216, 27)
+}
+#result{
+    grid-column: 3/5;
+}
+.highlight{
+    background-color: rgb(89, 49, 141);
+    color:rgb(181, 216, 27)
+}
